@@ -29,8 +29,9 @@
     },
     methods: {
       backToHome() {
-        this.$router.push('/home')
+        this.$router.push('/home');
       },
+      // 切换页面函数，，点击以后会被触发。index是按钮的顺序，分别有01234
       toggle(index) {
         this.active = index;
       },
@@ -39,32 +40,8 @@
 </script>
 
 <style lang="less" scoped>
-.left-dash{
-  padding-left: 80px;
-  padding-top: 30px;
-  width: 250px;
-  height: 60vh;
-  // background-color: black;
-}
-.left-dash div{
-  height: 34px;
-  width: 120px;
-  display: grid;
-  place-content: center;
-}
-p{
-  color: azure;
-}
-.clicked{
-  background: url("@/assets/images/ActiveBtn.png") center/100% 100% no-repeat;
-  margin-top: 40px;
-}
-.normal{
-  background: url("@/assets/images/Btn.png") center/100% 100% no-repeat;
-  margin-top: 40px;
-}
 .back{
   background: url("@/assets/images/HomeBtn.png") center/100% 100% no-repeat;
-  margin-top: 53vh;
+  margin-top: 51vh; 
 }
 </style>

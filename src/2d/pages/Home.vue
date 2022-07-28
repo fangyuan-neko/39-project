@@ -5,6 +5,7 @@
 </template>
 
 <script>
+  //两个页面url分别是/productline和/equipments 
   export default {
     name: "FactoryHomeView",
     data(){
@@ -15,7 +16,7 @@
 </script>
 
 <style lang="less" scoped>
-@import url("@/assets/CSS/reset.css");
+// @import url("@/assets/CSS/reset.css");
 
 // #home-main-block{
 //   // background-color: black;

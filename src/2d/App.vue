@@ -2,6 +2,7 @@
   <div class="main">
     <img src="@/assets/images/Title.png" alt="标题" id="title">
     <clock-dash class="clock-view"></clock-dash>
+    <!-- <three-dimension-dock></three-dimension-dock> -->
     <!-- <component :is="currentComponent"></component> -->
     <router-view></router-view>
   </div>
@@ -9,7 +10,7 @@
 
 <script>
 import ClockDash from "./components/ClockDash.vue";
-
+// import ThreeDimensionDock from "./compontents/3dDock.vue";
 
 export default {
   name: 'App',
@@ -18,7 +19,7 @@ export default {
       currentComponent: "FactoryHomeView"
     }
   },
-  components: {ClockDash}
+  components: {ClockDash},
 }
 </script>
 
@@ -34,15 +35,14 @@ export default {
   position: absolute;
   height: 82px;
   width: 645px;
-  // background: url("@/assets/");
 }
 .three-dimension{
   position: absolute;
 }
 .clock-view{
   position: absolute;
-  margin-top: 5vh;
-  margin-left: 85vw;
+  margin-top: 7vh;
+  margin-left: 82vw;
 }
 .main{
   height: 100vh;

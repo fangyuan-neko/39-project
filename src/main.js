@@ -1,8 +1,2 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import './assets/CSS/reset.css';
-import router from './router.js';
-
-const app = createApp(App);
-app.use(router);
-app.mount('#app');
+import "./2d/main.js";
+import "./3d";

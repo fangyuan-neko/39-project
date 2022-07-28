@@ -26,6 +26,7 @@
       }
     },
     methods: {
+      // 切换页面函数，点击以后会被触发。index是按钮的顺序，分别有0123
       toggle(index) {
         this.active = index;
       },
@@ -36,7 +37,7 @@
   }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .left-dash{
   padding-left: 80px;
   padding-top: 30px;
@@ -45,13 +46,14 @@
   // background-color: black;
 }
 .left-dash div{
-  height: 34px;
-  width: 120px;
+  height: 40px;
+  width: 160px;
   display: grid;
   place-content: center;
 }
 p{
   color: azure;
+  font-size: 20px;
 }
 .clicked{
   background: url("@/assets/images/ActiveBtn.png") center/100% 100% no-repeat;
@@ -61,8 +63,14 @@ p{
   background: url("@/assets/images/Btn.png") center/100% 100% no-repeat;
   margin-top: 40px;
 }
+.left-dash .back{
+  height: 43px;
+  width: 180px;
+}
 .back{
   background: url("@/assets/images/HomeBtn.png") center/100% 100% no-repeat;
-  margin-top: 60vh;
+  margin-top: 630px;
+  padding-right: 40px;
+  font-size: 15px;
 }
 </style>
