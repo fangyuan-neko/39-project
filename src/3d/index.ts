@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 
 // 引用2d模块的app.vue页面，以避免文件冲突或重复。
 // 通过配置SHOW2D属性来控制显示的内容
+// import App from '../2d/App.vue';
 import App from './App.vue';
 
 import axios from "axios"
