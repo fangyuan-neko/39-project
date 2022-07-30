@@ -5,12 +5,15 @@
     <!-- <three-dimension-dock></three-dimension-dock> -->
     <!-- <component :is="currentComponent"></component> -->
     <router-view></router-view>
+    <scene></scene>
   </div>
 </template>
 
 <script>
 import ClockDash from "./components/ClockDash.vue";
 // import ThreeDimensionDock from "./compontents/3dDock.vue";
+import Scene from "@/3d/views/Scene.vue";
+
 
 export default {
   name: 'App',
@@ -19,7 +22,7 @@ export default {
       currentComponent: "FactoryHomeView"
     }
   },
-  components: {ClockDash},
+  components: {ClockDash,Scene},
 }
 </script>
 

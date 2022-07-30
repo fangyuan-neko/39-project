@@ -1,5 +1,5 @@
 import * as Bol3D from "./main.js";
-import router from "@/2d/router/index";
+import router from "@/2d/router";
 
 var container,
   PRO_ENV,
