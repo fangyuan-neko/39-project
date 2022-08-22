@@ -1,6 +1,6 @@
 <template>
   <div class="scene-box">
-    <canvas style="width: 100%; height: 100%" ref="canvasEl"> </canvas>
+    <canvas style="width: 100vw; height: 100vh" ref="canvasEl"> </canvas>
   </div>
 </template>
 
@@ -32,3 +32,10 @@ export default {
  }
 }
 </script>
+<style scoped>
+canvas{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+</style>

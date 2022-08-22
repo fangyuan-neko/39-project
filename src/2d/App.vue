@@ -5,8 +5,8 @@
     <!-- <three-dimension-dock></three-dimension-dock> -->
     <!-- <component :is="currentComponent"></component> -->
     <router-view></router-view>
-    <scene></scene>
   </div>
+  <scene></scene>
 </template>
 
 <script>
@@ -48,7 +48,11 @@ export default {
   margin-left: 82vw;
 }
 .main{
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
   height: 100vh;
+  width: 100vw;
   background-image: url("@/assets/images/背景框@2x.png"), url("@/assets/images/back2.png");
   background-position: center;
   background-size: 100% 100%;
